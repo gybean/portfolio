@@ -1,1 +1,6 @@
-@import url("reset.css");/*# sourceMappingURL=main.css.map */
+@import url("reset.css");
+#section1 .title {
+  font-size: 16rem;
+}
+
+/* #section1 *//*# sourceMappingURL=main.css.map */
