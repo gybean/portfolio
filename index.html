@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yeobin.K의 포트폴리오</title>
-    <link rel="stylesheet" href="lib/fullpage.min.css">
     <link rel="stylesheet" href="css/main.scss">
     <link rel="stylesheet" href="css/main.css">
     <script src="lib/SplitText.min.js"></script>
-    <script src="lib/fullpage.min.js"></script>
+    <script src="lib/ScrollTrigger.min.js"></script>
+    <script src="lib/ScrollSmoother.min.js"></script>
     <script src="lib/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
 </head>
+
 <body>
+    <div class="cursor">
+        <div class="skiils">
+            <ul class="text text-01">
+                <li>HTML</li>
+                <li class="detail">웹의 구조를 설계하는 데 익숙하고, 마크업한 문서의 레이아웃과 스타일 정의가 가능합니다.</li>
+            </ul><!-- .text-01 end -->
+            <ul class="text text-02">
+                <li>CSS/SCSS</li>
+                <li class="detail">반응형 웹 구현과 레이아웃 구성에 필요한 코드를 작성할 수 있습니다. SCSS를 사용해 효율적인 코드 관리가 가능합니다.</li>
+            </ul><!-- .text-01 end -->
+            <ul class="text text-03">
+                <li>JS/jQuery</li>
+                <li class="detail">클릭, 스크롤 등 기본적인 이벤트를 구현할 수 있습니다.</li>
+            </ul><!-- .text-01 end -->
+            <ul class="text text-04">
+                <li>피그마</li>
+                <li class="detail">UX/UI 디자인 및 프로토타입 제작 및 관리가 가능합니다.</li>
+            </ul><!-- .text-01 end -->
+            <ul class="text text-05">
+                <li>포토샵</li>
+                <li class="detail">이미지 보정, 콘텐츠 디자인 등이 가능합니다. SNS와 웹에 최적화된 이미지를 제작할 수 있습니다.</li>
+            </ul><!-- .text-01 end -->
+            <ul class="text text-06">
+                <li>일러스트레이터</li>
+                <li class="detail">아이콘, 로고와 같은 인포그래픽 작업이 가능하며, 간단한 3D 요소를 활용 해 디자인 포스터를 제작할 수 있습니다.</li>
+            </ul><!-- .text-01 end -->
+            <ul class="text text-07">
+                <li>깃허브</li>
+                <li class="detail">GitHub를 통해 기본적인 커밋, 푸시, 브랜치 활용이 가능합니다.</li>
+            </ul><!-- .text-01 end -->
+        </div><!-- .skills end -->
+        <div class="click">
+            <img src="img/cursor-click.png" alt="마우스 클릭 이미지">
+        </div><!-- .click end -->
+    </div><!-- .cursor end -->
+
     <div id="loading">
         <div class="loading_wrap">
             <div class="top_text">
@@ -24,9 +62,9 @@
         </div><!-- .loading_wrap end -->
     </div><!-- #loading end -->
 
-    <div id="fullpage">
-        <section class="section fp-auto-height-responsive" id="section1">
-            <h1 class="title">
+    <main id="main">
+        <section id="section1">
+            <h1 class="main_title">
                 WELCOME TO<br />
                 MY PORTFOLIO
             </h1><!-- .title end -->
@@ -52,10 +90,469 @@
                     <img src="img/icon-exclamation_mark.gif" alt="icon-exclamation_mark">
                 </p><!-- .line-03 end -->
             </div><!-- .text end -->
+            <div class="rolling_text">
+                <div class="text">
+                    <span>SCROLL DOWN</span>
+                    <div class="arrow">↓</div>
+                </div><!-- .text end -->
+                <div class="text">
+                    <span>SCROLL DOWN</span>
+                    <div class="arrow">↓</div>
+                </div><!-- .text end -->
+                <div class="text">
+                    <span>SCROLL DOWN</span>
+                    <div class="arrow">↓</div>
+                </div><!-- .text end -->
+                <div class="text">
+                    <span>SCROLL DOWN</span>
+                    <div class="arrow">↓</div>
+                </div><!-- .text end -->
+                <div class="text">
+                    <span>SCROLL DOWN</span>
+                    <div class="arrow">↓</div>
+                </div><!-- .text end -->
+            </div><!-- .rolling_text end -->
         </section><!-- #section1 end -->
-        <section class="section fp-auto-height-responsive" id="section2">
-            <h1>Section 2</h1>
+
+        <section id="section2">
+            <div class="video-background">
+                <video autoplay muted loop>
+                    <source src="img/video/section2-bg.mp4" type="video/mp4">
+                </video>
+            </div><!-- .video-background end -->
+            <div class="inner">
+                <h2 class="title">YEOBIN’S SKILLS REPORT</h2>
+                <div class="table">
+                    <div class="profile">
+                        <div class="name">
+                            <h3 class="dashboard-title">NAME</h3>
+                            <div class="dashboard-txt">
+                                <p class="ko">김여빈</p>
+                                <p class="en">KIM YEOBIN</p>
+                            </div><!-- .dashboard-txt end -->
+                        </div><!-- .name end -->
+                        <div class="birthdate">
+                            <h3 class="dashboard-title">BIRTH DATE</h3>
+                            <div class="dashboard-txt">
+                                <p class="date">2000.04.03</p>
+                            </div><!-- .dashboard-txt end -->
+                        </div><!-- .birthdate end -->
+                    </div><!-- .profile end -->
+                    <div class="skills">
+                        <h3 class="dashboard-title">SKILLS</h3>
+                        <div class="dashboard-txt_wrap">
+                            <div class="text">
+                                <span class="number">1</span>
+                                <p class="skill">HTML</p>
+                            </div><!-- .text end -->
+                            <div class="text">
+                                <span class="number">2</span>
+                                <p class="skill">CSS, SCSS</p>
+                            </div><!-- .text end -->
+                            <div class="text">
+                                <span class="number">3</span>
+                                <p class="skill">JavaScript, jQuery</p>
+                            </div><!-- .text end -->
+                            <div class="text">
+                                <span class="number">4</span>
+                                <p class="skill">FIGMA</p>
+                            </div><!-- .text end -->
+                            <div class="text">
+                                <span class="number">5</span>
+                                <p class="skill">Adobe Photoshop</p>
+                            </div><!-- .text end -->
+                            <div class="text">
+                                <span class="number">6</span>
+                                <p class="skill">Adobe Illustrator</p>
+                            </div><!-- .text end -->
+                            <div class="text">
+                                <span class="number">7</span>
+                                <p class="skill">GitHub</p>
+                            </div><!-- .text end -->
+                        </div><!-- .dashboard-txt end -->
+                    </div><!-- .skills end -->
+                </div><!-- .table end -->
+            </div><!-- .inner end -->
         </section><!-- #section2 end -->
-    </div><!-- #fullpage end -->
+
+        <section id="section3">
+            <div class="rolling_text">
+                <p>PORTFOLIO BY YEOBIN.K</p>
+                <p>PORTFOLIO BY YEOBIN.K</p>
+                <p>PORTFOLIO BY YEOBIN.K</p>
+                <p>PORTFOLIO BY YEOBIN.K</p>
+            </div><!-- .rolling_text end -->
+        </section><!-- #section3 end -->
+
+        <section id="section4">
+            <div class="inner">
+                <ul class="menu">
+                    <li class="active">
+                        RENEWAL
+                        <span class="arrow">◀</span>
+                    </li>
+                    <li>
+                        CLONE CODING
+                        <span class="arrow">◀</span>
+                    </li>
+                    <li>
+                        MOBILE DESIGN
+                        <span class="arrow">◀</span>
+                    </li>
+                    <li>
+                        GRAPHIC DESIGN
+                        <span class="arrow">◀</span>
+                    </li>
+                </ul><!-- .menu end -->
+                <div class="item_wrap active">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title-bar">
+                                <p>01 공차</p>
+                                <ul class="icon_wrap">
+                                    <li><img src="img/under.png" alt="under icon"></li>
+                                    <li><img src="img/full.png" alt="full icon"></li>
+                                    <li><img src="img/close.png" alt="close icon"></li>
+                                </ul><!-- .icon_wrap end -->
+                            </div><!-- .title-bar end -->
+                            <div class="video">
+                                <video src="img/video/section4-web1.mp4" autoplay muted loop></video>
+                                <div class="box_hover">
+                                    <ul class="top">
+                                        <li>Desktop</li>
+                                        <li>Main Page</li>
+                                    </ul><!-- .top end -->
+                                    <ul class="btn_wrap">
+                                        <!-- <li><a href="#">PROCESS</a></li> -->
+                                        <li><a href="#">WEBSITE</a></li>
+                                    </ul><!-- .btn_wrap end -->
+                                    <ul class="bottom">
+                                        <li>PhotoShop, HTML, CSS, Swiper Demos</li>
+                                        <li>디자인, 퍼블리싱 100%</li>
+                                    </ul><!-- .bottom end -->
+                                </div><!-- .box_hover end -->
+                            </div><!-- .video end -->
+                        </div><!-- .box end -->
+                        <div class="detail">
+                            <p>음료 프랜차이즈 공차 브랜드를 리디자인 하였습니다. 지저분해 보이는 느낌의 레이아웃을 전체적으로 재배치 하여 이용자가 알아보기 쉽도록 제작하였습니다.</p>
+                        </div><!-- .detail end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <div class="box">
+                            <div class="title-bar">
+                                <p>02 어뮤즈</p>
+                                <ul class="icon_wrap">
+                                    <li><img src="img/under.png" alt="under icon"></li>
+                                    <li><img src="img/full.png" alt="full icon"></li>
+                                    <li><img src="img/close.png" alt="close icon"></li>
+                                </ul><!-- .icon_wrap end -->
+                            </div><!-- .title-bar end -->
+                            <div class="video">
+                                <video src="img/video/section4-web2.mp4" autoplay muted loop></video>
+                                <div class="box_hover">
+                                    <ul class="top">
+                                        <li>Desktop</li>
+                                        <li>Main Page</li>
+                                    </ul><!-- .top end -->
+                                    <ul class="btn_wrap">
+                                        <li><a href="#">PROCESS</a></li>
+                                        <li><a href="#">WEBSITE</a></li>
+                                    </ul><!-- .btn_wrap end -->
+                                    <ul class="bottom">
+                                        <li>Figma, HTML, CSS, Javascript, Swiper Demos</li>
+                                        <li>디자인, 퍼블리싱 100%</li>
+                                    </ul><!-- .bottom end -->
+                                </div><!-- .box_hover end -->
+                            </div><!-- .video end -->
+                        </div><!-- .box end -->
+                        <div class="detail">
+                            <p>작게 느껴지는 요소들의 크기를 키웠습니다. 전체적으로 어뮤즈 브랜드에 맞는 트렌디한 느낌을 살리는데 중점을 두었습니다.</p>
+                        </div><!-- .detail end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <div class="box">
+                            <div class="title-bar">
+                                <p>03 롯데 자이언츠</p>
+                                <ul class="icon_wrap">
+                                    <li><img src="img/under.png" alt="under icon"></li>
+                                    <li><img src="img/full.png" alt="full icon"></li>
+                                    <li><img src="img/close.png" alt="close icon"></li>
+                                </ul><!-- .icon_wrap end -->
+                            </div><!-- .title-bar end -->
+                            <div class="video">
+                                <video src="img/video/section4-web3.mp4" autoplay muted loop></video>
+                                <div class="box_hover">
+                                    <ul class="top">
+                                        <li>Desktop</li>
+                                        <li>Main Page & Sub Page 1</li>
+                                    </ul><!-- .top end -->
+                                    <ul class="btn_wrap">
+                                        <li><a href="#">PROCESS</a></li>
+                                        <li><a href="#">WEBSITE</a></li>
+                                    </ul><!-- .btn_wrap end -->
+                                    <ul class="bottom">
+                                        <li>Figma, HTML, CSS, SCSS, Javascript, jQuery, Swiper Demos</li>
+                                        <li>디자인, 퍼블리싱 100%</li>
+                                    </ul><!-- .bottom end -->
+                                </div><!-- .box_hover end -->
+                            </div><!-- .video end -->
+                        </div><!-- .box end -->
+                        <div class="detail">
+                            <p>스포츠 구단에 걸맞도록 사용자(팬)가 필요한 정보들만 메인 화면에 배치하고, 기존의 개선되지 않은 디자인을 현대적인 느낌으로 변경했습니다.</p>
+                        </div><!-- .detail end -->
+                    </div><!-- .item end -->
+                </div><!-- .item_wrap end -->
+                <div class="item_wrap">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title-bar">
+                                <p>01 즐거운</p>
+                                <ul class="icon_wrap">
+                                    <li><img src="img/under.png" alt="under icon"></li>
+                                    <li><img src="img/full.png" alt="full icon"></li>
+                                    <li><img src="img/close.png" alt="close icon"></li>
+                                </ul><!-- .icon_wrap end -->
+                            </div><!-- .title-bar end -->
+                            <div class="video">
+                                <video src="img/video/section4-web4.mp4" autoplay muted loop></video>
+                                <div class="box_hover">
+                                    <ul class="top">
+                                        <li>Desktop</li>
+                                        <li>Main Page</li>
+                                    </ul><!-- .top end -->
+                                    <ul class="btn_wrap">
+                                        <!-- <li><a href="#">PROCESS</a></li> -->
+                                        <li><a href="#">WEBSITE</a></li>
+                                    </ul><!-- .btn_wrap end -->
+                                    <ul class="bottom">
+                                        <li>HTML, CSS, Javascript</li>
+                                        <li>퍼블리싱 100%</li>
+                                    </ul><!-- .bottom end -->
+                                </div><!-- .box_hover end -->
+                            </div><!-- .video end -->
+                        </div><!-- .box end -->
+                        <div class="detail">
+                            <p>주식회사 "즐거운" 사이트를 데스크탑 버전으로 모작하였습니다.</p>
+                        </div><!-- .detail end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <div class="box">
+                            <div class="title-bar">
+                                <p>02 로보토리에듀</p>
+                                <ul class="icon_wrap">
+                                    <li><img src="img/under.png" alt="under icon"></li>
+                                    <li><img src="img/full.png" alt="full icon"></li>
+                                    <li><img src="img/close.png" alt="close icon"></li>
+                                </ul><!-- .icon_wrap end -->
+                            </div><!-- .title-bar end -->
+                            <div class="video">
+                                <video src="img/video/section4-web5.mp4" autoplay muted loop></video>
+                                <div class="box_hover">
+                                    <ul class="top">
+                                        <li>Desktop</li>
+                                        <li>Main Page</li>
+                                    </ul><!-- .top end -->
+                                    <ul class="btn_wrap">
+                                        <!-- <li><a href="#">PROCESS</a></li> -->
+                                        <li><a href="#">WEBSITE</a></li>
+                                    </ul><!-- .btn_wrap end -->
+                                    <ul class="bottom">
+                                        <li>HTML, CSS, Javascript</li>
+                                        <li>퍼블리싱 100%</li>
+                                    </ul><!-- .bottom end -->
+                                </div><!-- .box_hover end -->
+                            </div><!-- .video end -->
+                        </div><!-- .box end -->
+                        <div class="detail">
+                            <p>"로보토리에듀" 사이트를 데스크탑 버전으로 모작하였습니다.</p>
+                        </div><!-- .detail end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <div class="box">
+                            <div class="title-bar">
+                                <p>03 부산국제영화제</p>
+                                <ul class="icon_wrap">
+                                    <li><img src="img/under.png" alt="under icon"></li>
+                                    <li><img src="img/full.png" alt="full icon"></li>
+                                    <li><img src="img/close.png" alt="close icon"></li>
+                                </ul><!-- .icon_wrap end -->
+                            </div><!-- .title-bar end -->
+                            <div class="video">
+                                <video src="img/video/section4-web6.mp4" autoplay muted loop></video>
+                                <div class="box_hover">
+                                    <ul class="top">
+                                        <li>Desktop</li>
+                                        <li>Main Page & Sub Page 1</li>
+                                    </ul><!-- .top end -->
+                                    <ul class="btn_wrap">
+                                        <li><a href="#">PROCESS</a></li>
+                                        <li><a href="#">WEBSITE</a></li>
+                                    </ul><!-- .btn_wrap end -->
+                                    <ul class="bottom">
+                                        <li>Figma, HTML, CSS, SCSS, Javascript, jQuery</li>
+                                        <li>디자인, 퍼블리싱 100%</li>
+                                    </ul><!-- .bottom end -->
+                                </div><!-- .box_hover end -->
+                            </div><!-- .video end -->
+                        </div><!-- .box end -->
+                        <div class="detail">
+                            <p>"2025 부산국제영화제" 사이트를 반응형으로 모작하였습니다.</p>
+                        </div><!-- .detail end -->
+                    </div><!-- .item end -->
+                </div><!-- .item_wrap end -->
+                <div class="item_wrap">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title-bar">
+                                <p>01 포인핸드</p>
+                                <ul class="icon_wrap">
+                                    <li><img src="img/under.png" alt="under icon"></li>
+                                    <li><img src="img/full.png" alt="full icon"></li>
+                                    <li><img src="img/close.png" alt="close icon"></li>
+                                </ul><!-- .icon_wrap end -->
+                            </div><!-- .title-bar end -->
+                            <div class="video">
+                                <video src="img/video/section4-mobile1.mp4" autoplay muted loop></video>
+                                <div class="box_hover">
+                                    <ul class="top">
+                                        <li>Desktop</li>
+                                        <li>Main Page & Sub Page 1</li>
+                                    </ul><!-- .top end -->
+                                    <ul class="btn_wrap">
+                                        <li><a href="#">PROCESS</a></li>
+                                        <!-- <li><a href="#">WEBSITE</a></li> -->
+                                    </ul><!-- .btn_wrap end -->
+                                    <ul class="bottom">
+                                        <li>Figma</li>
+                                        <li>디자인 100%</li>
+                                    </ul><!-- .bottom end -->
+                                </div><!-- .box_hover end -->
+                            </div><!-- .video end -->
+                        </div><!-- .box end -->
+                        <div class="detail">
+                            <p>유기동물 구조와 입양을 돕는 '포인핸드' 어플리케이션을 리디자인하였습니다. 메인화면을 비롯 해 주요 메뉴의 화면을 이용자의 편의를 고려해 설계하였습니다.</p>
+                        </div><!-- .detail end -->
+                    </div><!-- .item end -->
+                </div><!-- .item_wrap end -->
+                <div class="item_wrap">
+                    <div class="image-boxes">
+                        <div class="image_wrap">
+                            <div class="modal">
+                                <div class="modal-box"></div>
+                            </div><!-- .modal end -->
+                            <div class="image">
+                                <img src="img/sec4-01.jpg" alt="그래픽 디자인1">
+                            </div><!-- .image end -->
+                        </div><!-- .image_wrap end -->
+                        <div class="image_wrap">
+                            <div class="modal">
+                                <div class="modal-box"></div>
+                            </div><!-- .modal end -->
+                            <div class="image">
+                                <img src="img/sec4-02.jpg" alt="그래픽 디자인1">
+                            </div><!-- .image end -->
+                        </div><!-- .image_wrap end -->
+                        <div class="image_wrap">
+                            <div class="modal">
+                                <div class="modal-box"></div>
+                            </div><!-- .modal end -->
+                            <div class="image">
+                                <img src="img/sec4-03.jpg" alt="그래픽 디자인1">
+                            </div><!-- .image end -->
+                        </div><!-- .image_wrap end -->
+                        <div class="image_wrap">
+                            <div class="modal">
+                                <div class="modal-box"></div>
+                            </div><!-- .modal end -->
+                            <div class="image">
+                                <img src="img/sec4-04.jpg" alt="그래픽 디자인1">
+                            </div><!-- .image end -->
+                        </div><!-- .image_wrap end -->
+                        <div class="image_wrap">
+                            <div class="modal">
+                                <div class="modal-box"></div>
+                            </div><!-- .modal end -->
+                            <div class="image">
+                                <img src="img/sec4-05.jpg" alt="그래픽 디자인1">
+                            </div><!-- .image end -->
+                        </div><!-- .image_wrap end -->
+                        <div class="image_wrap">
+                            <div class="modal">
+                                <div class="modal-box"></div>
+                            </div><!-- .modal end -->
+                            <div class="image">
+                                <img src="img/sec4-06.jpg" alt="그래픽 디자인1">
+                            </div><!-- .image end -->
+                        </div><!-- .image_wrap end -->
+                        <div class="image_wrap">
+                            <div class="modal">
+                                <div class="modal-box"></div>
+                            </div><!-- .modal end -->
+                            <div class="image">
+                                <img src="img/sec4-07.jpg" alt="그래픽 디자인1">
+                            </div><!-- .image end -->
+                        </div><!-- .image_wrap end -->
+                        <div class="image_wrap">
+                            <div class="modal">
+                                <div class="modal-box"></div>
+                            </div><!-- .modal end -->
+                            <div class="image">
+                                <img src="img/sec4-08.gif" alt="그래픽 디자인1">
+                            </div><!-- .image end -->
+                        </div><!-- .image_wrap end -->
+                    </div><!-- .image-boxes end -->
+                </div><!-- .item_wrap end -->
+            </div><!-- .inner end -->
+        </section><!-- #section4 end -->
+    </main><!-- #main end -->
+
+    <footer id="footer">
+        <div class="info_wrap">
+            <div class="left">
+                <h5>CONTACT ME?</h5>
+                <div class="round-image">
+                    <img src="img/contact-rotate.png" alt="THANK YOU FOR TAKING THE TIME TO VIEW MY WORK">
+                </div><!-- .round-image end -->
+            </div><!-- .left end -->
+            <div class="right">
+                <ul class="text_wrap">
+                    <li>
+                        제 이메일은
+                        <div class="box">
+                            <img src="img/footer-icon-email.gif" alt="이메일주소">
+                            <span class="email">kimyb0063@naver.com</span>
+                        </div>
+                        입니다.
+                    </li>
+                    <li>
+                        입사지원서는
+                        <a href="">
+                            <div class="box">
+                                <img src="img/footer-icon-pdf.gif" alt="입사지원서 pdf">
+                                <span class="resume">여기서</span>
+                            </div>
+                        </a>
+                        다운로드 가능합니다.
+                    </li>
+                    <li>
+                        깃허브를 보고싶으시다면
+                        <a href="https://github.com/gybean">
+                            <div class="box">
+                                <img src="img/footer-icon-github.gif" alt="깃허브 url">
+                                <span class="email">이곳을</span>
+                            </div>
+                        </a>
+                        클릭 해 주세요.
+                    </li>
+                </ul><!-- .text_wrap end -->
+            </div><!-- .right end -->
+        </div><!-- .info_wrap end -->
+        <div class="copyright">
+            <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다. <br />일부 내용 및 폰트, 이미지 등은 해당 출처가 별도로 존재함을 밝힙니다.</p>
+            <span>© 2025 Yeobin Kim. All rights reserved.</span>
+        </div><!-- .copyright end -->
+    </footer><!-- #footer end -->
+
 </body>
+
 </html>
