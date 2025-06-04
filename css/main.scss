@@ -427,6 +427,42 @@ body {
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .text {
+            .line-01 {
+                display: flex;
+                flex-wrap: wrap;
+                white-space: nowrap;
+                font-size: 3rem;
+                img {
+                    width: 3rem;
+                }
+            }
+
+            .line-02 {
+                display: flex;
+                flex-wrap: wrap;
+                white-space: nowrap;
+                font-size: 3rem;
+                img {
+                    width: 3rem;
+                }
+            }
+            .line-03 {
+                display: flex;
+                flex-wrap: wrap;
+                white-space: nowrap;
+                font-size: 3rem;
+                img {
+                    width: 3rem;
+                }
+            }
+        }
+    }
 } /* #section1 */
 
 #section2 {
