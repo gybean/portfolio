@@ -914,6 +914,14 @@ body {
   #footer .info_wrap .right .text_wrap {
     gap: 1.2rem;
   }
+  #footer .info_wrap .right .text_wrap li {
+    font-size: 2.4rem;
+  }
+  #footer .info_wrap .right .text_wrap li .box {
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+  }
   #footer .info_wrap .right .text_wrap li .box img {
     display: none;
   }
