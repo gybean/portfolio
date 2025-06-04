@@ -608,7 +608,37 @@ body {
     @media screen and (max-width: 768px) {
         .inner {
             .table {
-                
+                border-top: 0;
+                border-bottom: 0;
+                flex-direction: column;
+                .profile {
+                    margin-bottom: 1rem;
+                    width: 100%;
+                    border-top: 2px solid #121212;
+                    border-bottom: 2px solid #121212;
+                    .name {
+                        .dashboard-txt {
+                            display: flex;
+                            p {
+                                &:nth-child(2) {
+                                    margin-left: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .skills {
+                    border-top: 2px solid #121212;
+                    border-bottom: 2px solid #121212;
+                    border-left: 0;
+                    .dashboard-txt_wrap {
+                        .text {
+                            .number {
+                                width: 20rem;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

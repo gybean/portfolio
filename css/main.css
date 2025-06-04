@@ -537,6 +537,34 @@ body {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 768px) {
+  #section2 .inner .table {
+    border-top: 0;
+    border-bottom: 0;
+    flex-direction: column;
+  }
+  #section2 .inner .table .profile {
+    margin-bottom: 1rem;
+    width: 100%;
+    border-top: 2px solid #121212;
+    border-bottom: 2px solid #121212;
+  }
+  #section2 .inner .table .profile .name .dashboard-txt {
+    display: flex;
+  }
+  #section2 .inner .table .profile .name .dashboard-txt p:nth-child(2) {
+    margin-left: 1rem;
+  }
+  #section2 .inner .table .skills {
+    border-top: 2px solid #121212;
+    border-bottom: 2px solid #121212;
+    border-left: 0;
+  }
+  #section2 .inner .table .skills .dashboard-txt_wrap .text .number {
+    width: 20rem;
+  }
+}
+
 /* #section2 */
 #section3 .rolling_text {
   padding: 1.5rem 0;
