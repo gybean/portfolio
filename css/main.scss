@@ -1185,6 +1185,7 @@ body {
                 }
             }
             .item_wrap {
+                padding: 1.2rem;
                 .item {
                     .box {
                         .box {
@@ -1263,6 +1264,7 @@ body {
                     }
                 }
                 .image-boxes {
+                    justify-content: space-evenly;
                     .image_wrap {
                         .image {
                             width: 22rem;
@@ -1320,6 +1322,14 @@ body {
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+                .image-boxes {
+                    .image_wrap {
+                        .image {
+                            width: 18.4rem;
+                            height: 23rem;
                         }
                     }
                 }
@@ -1407,9 +1417,9 @@ body {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        font-family: 'Pretendard';
         font-size: 2rem;
         p {
+            font-family: 'Pretendard';
             line-height: 1.4;
         }
         span {
