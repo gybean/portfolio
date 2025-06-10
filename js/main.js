@@ -95,4 +95,29 @@ $(function () {
     }; //for
 
 
+
+    //section04
+    //swiper
+    var swiper = new Swiper(".section04Swiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+
+    //section04
+    //QR코드
+    let btn = document.querySelector('#section4 .qr .btn');
+    let QRcode = document.querySelector('#section4 .qr .code');
+
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        QRcode.classList.toggle('active');
+    }); //btn.click();
+
+
+
+
     });
