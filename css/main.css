@@ -901,7 +901,7 @@ body {
   row-gap: 1.6rem;
 }
 #section4 .inner .item_wrap .item .box .section04Swiper .swiper-wrapper .swiper-slide .slide-box .btn_all .btn_text {
-  text-align: center;
+  /* text-align: center; */
   font-size: 1.6rem;
   color: rgba(18, 18, 18, 0.5);
   /* border-bottom: 1px solid rgb(18, 18, 18, 0.5); */
